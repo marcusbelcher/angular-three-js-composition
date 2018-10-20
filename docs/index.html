@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularThreeJs</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script id="vertex-shader" type="x-shader/x-vertex">
+    varying vec2 uv1;
+    void main() {
+      uv1 = uv;
+      gl_Position = vec4(position, 1.0);
+    }
+  </script>
+  <script id="fragment-shader" type="x-shader/x-fragment">
+    uniform sampler2D texture;
+    uniform vec3 color1;
+    varying vec2 uv1;
+    void main() {      
+      vec4 col = texture2D(texture, uv1);
+      col.a = 1.0;
+      col.rgb *= color1;
+      gl_FragColor = col;
+    }
+  </script>
+<link rel="stylesheet" href="styles.67bca6f36f8e62c494ab.css"></head>
+
+<body>
+  <app-root></app-root>
+<script type="text/javascript" src="runtime.721ab60be0089f3f7b47.js"></script><script type="text/javascript" src="polyfills.c6871e56cb80756a5498.js"></script><script type="text/javascript" src="scripts.556520842dd5ba44bd2d.js"></script><script type="text/javascript" src="main.2558b98724dee7211aad.js"></script></body>
+
+</html>
