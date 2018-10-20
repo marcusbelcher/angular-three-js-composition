@@ -1,0 +1,19 @@
+{
+    "videos": [
+        {
+            "mp4": "microbial.mp4",
+            "webm": "microbial.webm",
+            "ogv": "microbial.ogv"
+        },
+        {
+            "mp4": "jellyfishes.mp4",
+            "webm": "jellyfishes.webm",
+            "ogv": "jellyfishes.ogv"
+        },
+        {
+            "mp4": "cells.mp4",
+            "webm": "cells.webm",
+            "ogv": "cells.ogv"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>Enter your HSL values</h3>
+    <form class="hsl-form">
+        <mat-form-field class="full-width">
+            <input matInput type="number" placeholder="Hue" value="0" step="0.001" min="0" max="100" (change)="hueChanged($event)">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput type="number" placeholder="Saturation" value="0" step="0.001" min="0" max="100" (change)="saturationChanged($event)">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput type="number" placeholder="Lightness" value="0" step="0.001" min="0" max="100" (change)="lightnessChanged($event)">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" (click)="onNext()">Apply</button>
+</div>

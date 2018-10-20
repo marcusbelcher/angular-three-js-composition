@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    h1 {
+        text-align: center;
+    }
+
+    .composition {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width:100vw;
+        height:100vh;
+        z-index: 0;
+        overflow:hidden;    
+    }
+
+    .overlay {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width:100vw;
+        height:100vh;
+        z-index: 1;
+        overflow:hidden;    
+    }
+}
