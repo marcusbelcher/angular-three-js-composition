@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1 and implemented a simple WebGL compositor with [Three.JS](https://threejs.org/). You can argue the state logic/frameworks are a tad overkill however I was asked to 1) composit a color and video in Three.JS and 2) how in Angular 2+ do you LazyLoad a stateful module from two different people so here we are ;)
 
+Live demo: https://marcusbelcher.github.io/angular-three-js-composition
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
